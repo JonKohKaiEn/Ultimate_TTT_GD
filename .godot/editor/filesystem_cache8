@@ -1,0 +1,16 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1723351456
+default_env.tres::Environment::8678852342272242491::1723310351::0::1::::<><>::
+icon.png::CompressedTexture2D::161222385811815602::1722422987::1722423030::1::::<><>::
+::res://assets/::1722423030
+grid.png::CompressedTexture2D::5850498890504259029::1722422987::1722423030::1::::<><>::
+O.png::CompressedTexture2D::7773248642806206813::1722422987::1722423030::1::::<><>::
+selection.png::CompressedTexture2D::220960134386544873::1722422987::1722423030::1::::<><>::
+X.png::CompressedTexture2D::5188095024593030496::1722422987::1722423030::1::::<><>::
+::res://scenes/::1723310351
+cell.tscn::PackedScene::272268392081976992::1723310317::0::1::::<><>::uid://dfbgfnfov4ef::::res://assets/selection.png<>res://scripts/cell.gd
+Main.tscn::PackedScene::7158052729731320955::1723310351::0::1::::<><>::uid://cpma4konsdn7j::::res://assets/grid.png<>res://scripts/Main.gd<>uid://d45hrb8n8t2g::::res://scenes/cell.tscn
+::res://scripts/::1723310091
+cell.gd::GDScript::-1::1723309849::0::1::::<>TextureButton<>::
+event_bus.gd::GDScript::-1::1723275386::0::1::::<>Node<>::
+Main.gd::GDScript::-1::1723310091::0::1::::<>Control<>::

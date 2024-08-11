@@ -1,22 +1,12 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=3 uid="uid://d45hrb8n8t2g"]
 
-[ext_resource path="res://assets/selection.png" type="Texture" id=1]
-[ext_resource path="res://scenes/Cell.gd" type="Script" id=2]
+[ext_resource type="Texture2D" uid="uid://dfbgfnfov4ef" path="res://assets/selection.png" id="1_ggoac"]
+[ext_resource type="Script" path="res://scripts/cell.gd" id="2_5b7fi"]
 
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 30, 30 )
+[node name="Cell" type="TextureButton"]
+offset_right = 40.0
+offset_bottom = 40.0
+texture_hover = ExtResource("1_ggoac")
+script = ExtResource("2_5b7fi")
 
-[node name="Cell" type="Area2D"]
-script = ExtResource( 2 )
-
-[node name="MouseOver" type="Sprite" parent="."]
-texture = ExtResource( 1 )
-
-[node name="X_O" type="Sprite" parent="."]
-
-[node name="Selection" type="CollisionShape2D" parent="."]
-shape = SubResource( 1 )
-
-[connection signal="input_event" from="." to="." method="_on_Cell_input_event"]
-[connection signal="mouse_entered" from="." to="." method="_on_Cell_mouse_entered"]
-[connection signal="mouse_exited" from="." to="." method="_on_Cell_mouse_exited"]
+[connection signal="button_up" from="." to="." method="_on_button_up"]
